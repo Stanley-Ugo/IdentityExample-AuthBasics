@@ -46,9 +46,15 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        public IActionResult Register(string username, string password)
+        public async Task<IActionResult> Register(string username, string password)
         {
+            var user = new IdentityUser
+            {
+                UserName = username,
 
+            };
+
+            var result = await _userManager.CreateAsync(user, password);
             return RedirectToAction("Index");
         }
     }
