@@ -22,27 +22,26 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        public IActionResult Authenticate()
+        public IActionResult Login()
         {
-            var grandmaClaims = new List<Claim>()
-            {
-                new Claim(ClaimTypes.Name, "bob"),
-                new Claim(ClaimTypes.Email, "bob@fmail.com"),
-                new Claim("Grandma.Says", "Very nice boi."),
-            };
+            
+            return View();
+        }
 
-            var licenseClaims = new List<Claim>()
-            {
-                new Claim(ClaimTypes.Email, "Bob K Foo"),
-                new Claim("DrivingLicense", "A+."),
-            };
+        public IActionResult Login(string username, string password)
+        {
 
-            var grandmaIdentity = new ClaimsIdentity(grandmaClaims, "Grandma Identity");
-            var licenseIdentity = new ClaimsIdentity(licenseClaims, "Government");
+            return RedirectToAction("Index");
+        }
 
-            var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity, licenseIdentity });
+        public IActionResult Register()
+        {
 
-            HttpContext.SignInAsync(userPrincipal);
+            return View();
+        }
+
+        public IActionResult Register(string username, string password)
+        {
 
             return RedirectToAction("Index");
         }
