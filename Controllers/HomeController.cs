@@ -44,7 +44,12 @@ namespace IdentityExample.Controllers
             if(user != null)
             {
                 //Sign the User in
-                await _signInManager.PasswordSignInAsync(user, password, false, false);
+                var signInResult = await _signInManager.PasswordSignInAsync(user, password, false, false);
+
+                if (signInResult.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
             }
 
             return RedirectToAction("Index");
@@ -68,8 +73,20 @@ namespace IdentityExample.Controllers
 
             if (result.Succeeded)
             {
-                //Register the 
+                //Sign the User in
+                var signInResult = await _signInManager.PasswordSignInAsync(user, password, false, false);
+
+                if (signInResult.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
             }
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index");
         }
     }
