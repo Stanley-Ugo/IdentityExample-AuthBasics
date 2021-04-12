@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,11 @@ namespace IdentityExample.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly UserManager<IdentityUser> _userManager;
+        public HomeController(UserManager<IdentityUser> userManager)
+        {
+            _userManager = userManager;
+        }
         public IActionResult Index()
         {
             return View();
