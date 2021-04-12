@@ -24,6 +24,7 @@ namespace IdentityExample
             });
 
             services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
             //services.AddAuthentication("CookieAuth")
