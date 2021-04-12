@@ -44,6 +44,7 @@ namespace IdentityExample.Controllers
             if(user != null)
             {
                 //Sign the User in
+                await _signInManager.PasswordSignInAsync(user, password, false, false);
             }
 
             return RedirectToAction("Index");
