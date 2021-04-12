@@ -2,6 +2,7 @@ using IdentityExample.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +22,9 @@ namespace IdentityExample
             services.AddDbContext<AppDbContext>(config => {
                 config.UseInMemoryDatabase("Memory");
             });
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDefaultTokenProviders();
 
             //services.AddAuthentication("CookieAuth")
             //    .AddCookie("CookieAuth", config =>
