@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vFmV7597l1RBjNQ+kXrygvUVp27pk3V0d+XwOHuisDUct5c38vibBIcx7q90ArhGM3L+VJ4FkI+oyCCEXlx/xw==",
+  "dgSpecHash": "MnhPDevd9vC3+Er5LDqMPfGh28ghvDKBhuSQEIHoWAqsUk8OXIQG4Vf/yn4CLjORGmx6bmVavqoBCk/c5rXlOA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\IdentityExample\\IdentityExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
+    "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.5\\microsoft.entityframeworkcore.inmemory.5.0.5.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
