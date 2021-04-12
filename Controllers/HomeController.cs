@@ -31,6 +31,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
+        [HttpPost]
         public IActionResult Login()
         {
             
@@ -61,6 +62,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Register(string username, string password)
         {
             var user = new IdentityUser
