@@ -13,9 +13,12 @@ namespace IdentityExample.Controllers
     public class HomeController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
-        public HomeController(UserManager<IdentityUser> userManager)
+        private readonly SignInManager<IdentityUser> _signInManager;
+
+        public HomeController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
         public IActionResult Index()
         {
@@ -38,6 +41,11 @@ namespace IdentityExample.Controllers
         {
             var user = await _userManager.FindByNameAsync(username);
 
+            if(user != null)
+            {
+                //Sign the User in
+            }
+
             return RedirectToAction("Index");
         }
 
@@ -59,7 +67,7 @@ namespace IdentityExample.Controllers
 
             if (result.Succeeded)
             {
-
+                //Register the 
             }
             return RedirectToAction("Index");
         }
