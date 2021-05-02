@@ -76,13 +76,7 @@ namespace IdentityExample.Controllers
 
             if (result.Succeeded)
             {
-                //Sign the User in
-                var signInResult = await _signInManager.PasswordSignInAsync(user, password, false, false);
-
-                if (signInResult.Succeeded)
-                {
-                    return RedirectToAction("Index");
-                }
+                //generation of the email confirmation token
             }
             return RedirectToAction("Index");
         }
