@@ -79,6 +79,7 @@ namespace IdentityExample.Controllers
                 //generation of the email confirmation token
 
                 var cose = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
                 return RedirectToAction("EmailVerification");
             }
             return RedirectToAction("Index");
