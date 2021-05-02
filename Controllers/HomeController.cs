@@ -77,8 +77,15 @@ namespace IdentityExample.Controllers
             if (result.Succeeded)
             {
                 //generation of the email confirmation token
+
+                return RedirectToAction("EmailVerification");
             }
             return RedirectToAction("Index");
+        }
+
+        public IActionResult EmailVerification()
+        {
+            return View();
         }
 
         public async Task<IActionResult> LogOut()
