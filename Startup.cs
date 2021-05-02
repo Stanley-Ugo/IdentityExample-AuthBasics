@@ -32,12 +32,10 @@ namespace IdentityExample
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
-            //services.AddAuthentication("CookieAuth")
-            //    .AddCookie("CookieAuth", config =>
-            //    {
-            //        config.Cookie.Name = "Grandmas.Cookie";
-            //        config.LoginPath = "/Home/Authenticate";
-            //    });
+            services.ConfigureApplicationCookie(config => {
+                config.Cookie.Name = "Identity.Cookie";
+                config.LoginPath = "/Home/Login";
+            });
 
             services.AddControllersWithViews();
         }
