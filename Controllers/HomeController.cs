@@ -83,9 +83,9 @@ namespace IdentityExample.Controllers
 
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
-                var link = Url.Action(nameof(VerifyEmail), "Home", new { userId = user.Id, code });
+                var link = Url.Action(nameof(VerifyEmail), "Home", new { userId = user.Id, code }, Request.Scheme, Request.Host.ToString());
 
-                await _emailService.SendAsync("test@test.com", "Email Verify", link);
+                await _emailService.SendAsync("test@test.com", "Email Verify", $"<a href=\"{link}\">Verify Email</a>", true);
 
                 return RedirectToAction("EmailVerification");
             }
@@ -94,7 +94,18 @@ namespace IdentityExample.Controllers
 
         public async Task<IActionResult> VerifyEmail(string userId, string code)
         {
-            return View();
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null) return BadRequest();
+
+            var result = await _userManager.ConfirmEmailAsync(user, code);
+
+            if (result.Succeeded)
+            {
+                return View();
+            }
+
+            return BadRequest(); 
         }
 
         public IActionResult EmailVerification()

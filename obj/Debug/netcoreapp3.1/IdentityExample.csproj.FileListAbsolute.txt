@@ -53,3 +53,9 @@ C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\IdentityExample.csproj.CopyC
 C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\IdentityExample.dll
 C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\IdentityExample.pdb
 C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\IdentityExample.genruntimeconfig.cache
+C:\Projects\IdentityExample\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Projects\IdentityExample\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Projects\IdentityExample\bin\Debug\netcoreapp3.1\NETCore.MailKit.dll
+C:\Projects\IdentityExample\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\Razor\Views\Home\EmailVerification.cshtml.g.cs
+C:\Projects\IdentityExample\obj\Debug\netcoreapp3.1\Razor\Views\Home\VerifyEmail.cshtml.g.cs
