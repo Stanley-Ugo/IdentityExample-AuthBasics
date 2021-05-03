@@ -62,6 +62,7 @@ namespace IdentityExample.Controllers
             return RedirectToAction("Index");
         }
 
+
         public IActionResult Register()
         {
 
