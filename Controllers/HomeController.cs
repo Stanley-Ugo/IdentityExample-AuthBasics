@@ -23,6 +23,7 @@ namespace IdentityExample.Controllers
             _signInManager = signInManager;
             _emailService = emailService;
         }
+
         public IActionResult Index()
         {
             return View();
