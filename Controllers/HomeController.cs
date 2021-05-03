@@ -112,6 +112,7 @@ namespace IdentityExample.Controllers
             return BadRequest(); 
         }
 
+
         public IActionResult EmailVerification()
         {
             return View();
