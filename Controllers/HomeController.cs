@@ -62,12 +62,12 @@ namespace IdentityExample.Controllers
             return RedirectToAction("Index");
         }
 
-
         public IActionResult Register()
         {
 
             return View();
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Register(string username, string password)
