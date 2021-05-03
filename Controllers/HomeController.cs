@@ -36,7 +36,6 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        
         public IActionResult Login()
         {
             
