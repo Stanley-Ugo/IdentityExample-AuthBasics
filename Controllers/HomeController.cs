@@ -19,7 +19,6 @@ namespace IdentityExample.Controllers
 
         private readonly IEmailService _emailService;
 
-
         public HomeController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IEmailService emailService)
         {
             _userManager = userManager;
