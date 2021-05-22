@@ -65,7 +65,6 @@ namespace IdentityExample.Controllers
         public IActionResult Register()
         {
 
-
             return View();
         }
 
