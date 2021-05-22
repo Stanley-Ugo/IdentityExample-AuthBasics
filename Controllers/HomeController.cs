@@ -58,11 +58,13 @@ namespace IdentityExample.Controllers
                     return RedirectToAction("Index");
                 }
             }
+
             return RedirectToAction("Index");
         }
 
         public IActionResult Register()
         {
+
 
             return View();
         }
