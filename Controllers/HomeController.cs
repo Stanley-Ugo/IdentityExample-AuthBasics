@@ -98,6 +98,7 @@ namespace IdentityExample.Controllers
 
         public async Task<IActionResult> VerifyEmail(string userId, string code)
         {
+
             var user = await _userManager.FindByIdAsync(userId);
 
             if (user == null) return BadRequest();
