@@ -122,6 +122,7 @@ namespace IdentityExample.Controllers
         {
 
             await _signInManager.SignOutAsync();
+
             return RedirectToAction("Index");
         }
     }
