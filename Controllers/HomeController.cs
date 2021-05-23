@@ -115,6 +115,7 @@ namespace IdentityExample.Controllers
 
         public IActionResult EmailVerification()
         {
+
             return View();
         }
 
