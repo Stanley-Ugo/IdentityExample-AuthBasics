@@ -20,13 +20,13 @@ namespace IdentityExample.Controllers
         public HomeController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IEmailService emailService)
         {
             _userManager = userManager;
+
             _signInManager = signInManager;
             _emailService = emailService;
         }
 
         public IActionResult Index()
         {
-
             return View();
         }
 
