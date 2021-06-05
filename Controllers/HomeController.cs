@@ -22,7 +22,6 @@ namespace IdentityExample.Controllers
             _userManager = userManager;
 
             _signInManager = signInManager;
-
             _emailService = emailService;
         }
 
