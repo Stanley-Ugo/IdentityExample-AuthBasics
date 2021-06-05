@@ -26,6 +26,7 @@ namespace IdentityExample.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 
