@@ -24,7 +24,7 @@ namespace IdentityExample
         {
             _config = config;
         }
-        // This method gets called by the runtime
+        // This method gets called by the runtime.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
