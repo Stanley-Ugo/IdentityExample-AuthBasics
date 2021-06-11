@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cGPlUrXZVizE2AT/O4owNq6+RiGjmtKzn6KxuWQmfbQU8b4gW+49tR+N69w5b3/RmpIxB7sLbmAFwGyc1dG9SA==",
+  "dgSpecHash": "o+n5WA4yUhDJsbWGWEIuOI3897RDHzAyysAndE51oHF791bUYZfZwwbzi8ZCxU1tCNnN0i6xuEhdE8C2TNhBSw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\IdentityExample\\IdentityExample.csproj",
   "expectedPackageFiles": [
@@ -89,7 +89,8 @@
     "C:\\Users\\iamKosmic\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\iamKosmic\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\iamKosmic\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512"
+    "C:\\Users\\iamKosmic\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
+    "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }
