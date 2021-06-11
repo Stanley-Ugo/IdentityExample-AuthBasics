@@ -35,7 +35,7 @@ namespace IdentityExample
             services.AddIdentity<IdentityUser, IdentityRole>(config => {
                 config.Password.RequiredLength = 4;
                 config.Password.RequireDigit = false;
-                config.Password.RequireNonAlphanumeric = falsel;
+                config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequireUppercase = false;
                 config.SignIn.RequireConfirmedEmail = true;
             })
