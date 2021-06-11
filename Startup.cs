@@ -36,8 +36,8 @@ namespace IdentityExample
                 config.Password.RequiredLength = 4;
                 config.Password.RequireDigit = false;
                 config.Password.RequireNonAlphanumeric = false;
-                config.Password.RequireUppercase = false
-                config.SignIn.RequireConfirmedEmail = true;
+                config.Password.RequireUppercase = false;
+                config.SignIn.RequireConfirmedEmail = true
             })
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
