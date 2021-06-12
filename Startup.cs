@@ -43,7 +43,7 @@ namespace IdentityExample
                 .AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(config => {
-                config.Cookie.Name = "Identity.Cookie";
+                config.Cookie.Name = "Identity.Cookie"
                 config.LoginPath = "/Home/Login";
             });
 
