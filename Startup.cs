@@ -47,7 +47,7 @@ namespace IdentityExample
                 config.LoginPath = "/Home/Login";
             });
 
-            var mailKitOptions = _config.GetSection("Email").Get<MailKitOptions>()
+            var mailKitOptions = _config.GetSection("Email").Get<MailKitOptions>();
 
             services.AddMailKit(config => config.UseMailKit(mailKitOptions));
 
