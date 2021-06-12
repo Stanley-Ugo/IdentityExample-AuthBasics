@@ -49,7 +49,7 @@ namespace IdentityExample
 
             var mailKitOptions = _config.GetSection("Email").Get<MailKitOptions>();
 
-            services.AddMailKit(config => config.UseMailKit(mailKitOptions));
+            services.AddMailKit(config => config.UseMailKit(mailKitOptions))
 
             services.AddControllersWithViews();
         }
