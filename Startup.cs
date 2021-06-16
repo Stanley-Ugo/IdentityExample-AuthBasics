@@ -25,7 +25,7 @@ namespace IdentityExample
             _config = config;
         }
         
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?Link
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(config => {
