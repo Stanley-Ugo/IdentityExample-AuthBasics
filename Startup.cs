@@ -25,7 +25,7 @@ namespace IdentityExample
             _config = config;
         }
         
-        // For more information on how to configure yo
+        // For more information on how to configure 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(config => {
