@@ -25,7 +25,7 @@ namespace IdentityExample
             _config = config;
         }
         
-        // For more infon
+        // For more inf
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(config => {
@@ -54,7 +54,6 @@ namespace IdentityExample
             services.AddControllersWithViews();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
