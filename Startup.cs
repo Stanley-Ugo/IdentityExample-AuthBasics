@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NETCore.MailKit.Extensions;
 using NETCore.MailKit.Infrastructure.Internal;
-using System.Linq;
+using System.Linq
 using System.Threading.Tasks;
 
 namespace IdentityExample
@@ -22,6 +22,7 @@ namespace IdentityExample
         {
             _config = config;
         }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(config => {
