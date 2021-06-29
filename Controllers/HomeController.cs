@@ -22,6 +22,8 @@ namespace IdentityExample.Controllers
         public HomeController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IEmailService emailService)
         {
             //Dependency Injection
+
+            //Injecting UserManager Object
             _userManager = userManager;
             _signInManager = signInManager;
             _emailService = emailService;
