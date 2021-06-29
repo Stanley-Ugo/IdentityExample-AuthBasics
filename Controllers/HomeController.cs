@@ -133,6 +133,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
+        //Logout Action
         public async Task<IActionResult> LogOut()
         {
 
