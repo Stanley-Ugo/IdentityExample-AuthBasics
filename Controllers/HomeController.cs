@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace IdentityExample.Controllers
 {
+    //HomeController
     public class HomeController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
