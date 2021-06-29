@@ -40,7 +40,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-
+        //Secret
         [Authorize]
         public IActionResult Secret()
         {
