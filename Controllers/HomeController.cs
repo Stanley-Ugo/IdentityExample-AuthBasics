@@ -28,6 +28,8 @@ namespace IdentityExample.Controllers
 
             //Injecting Signing Manager
             _signInManager = signInManager;
+
+            //Injecting EmailService
             _emailService = emailService;
         }
 
