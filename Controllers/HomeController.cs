@@ -53,7 +53,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-
+        //Login post
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
