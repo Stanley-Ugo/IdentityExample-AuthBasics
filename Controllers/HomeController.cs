@@ -25,6 +25,8 @@ namespace IdentityExample.Controllers
 
             //Injecting UserManager Object
             _userManager = userManager;
+
+            //Injecting Signing Manager
             _signInManager = signInManager;
             _emailService = emailService;
         }
