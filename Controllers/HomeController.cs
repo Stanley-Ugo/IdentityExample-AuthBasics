@@ -48,7 +48,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Login action
+        //Login action method
         public IActionResult Login()
         {
             return View();
