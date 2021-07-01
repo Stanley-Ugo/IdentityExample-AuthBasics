@@ -127,7 +127,7 @@ namespace IdentityExample.Controllers
         }
 
 
-        //EmailVerification Action
+        //EmailVerification Action method
         public IActionResult EmailVerification()
         {
 
