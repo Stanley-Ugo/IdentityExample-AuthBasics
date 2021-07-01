@@ -41,7 +41,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Secret
+        //Secret method
         [Authorize]
         public IActionResult Secret()
         {
