@@ -18,7 +18,7 @@ namespace IdentityExample.Controllers
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IEmailService _emailService;
 
-        //HomeController Constructor
+        //HomeController class Constructor
         public HomeController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IEmailService emailService)
         {
             //Dependency Injection
