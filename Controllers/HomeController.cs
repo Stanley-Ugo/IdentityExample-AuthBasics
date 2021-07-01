@@ -54,7 +54,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Login post
+        //Login post Method
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
