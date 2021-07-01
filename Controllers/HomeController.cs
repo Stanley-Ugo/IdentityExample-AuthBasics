@@ -54,7 +54,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Login post Metho
+        //Login post Method
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
@@ -74,7 +74,7 @@ namespace IdentityExample.Controllers
             return RedirectToAction("Index");
         }
 
-        //Register
+        //Register method
         public IActionResult Register()
         {
             return View();
