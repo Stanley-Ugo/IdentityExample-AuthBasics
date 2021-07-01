@@ -134,7 +134,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Logout Action
+        //Logout Action Method
         public async Task<IActionResult> LogOut()
         {
 
