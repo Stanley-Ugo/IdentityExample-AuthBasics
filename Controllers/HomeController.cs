@@ -34,7 +34,7 @@ namespace IdentityExample.Controllers
             _emailService = emailService;
         }
 
-        //Index Action
+        //Index Action method
         public IActionResult Index()
         {
 
