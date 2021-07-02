@@ -90,11 +90,11 @@ namespace IdentityExample.Controllers
 
             };
 
-            var result = await _userManager.CreateAsync(user, password)
+            var result = await _userManager.CreateAsync(user, password);
 
             if (result.Succeeded)
             {
-                //generation of the email confirmation token
+                //generation of the email confirmation token.
 
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
