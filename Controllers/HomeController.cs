@@ -86,7 +86,6 @@ namespace IdentityExample.Controllers
         {
             var user = new IdentityUser
             {
-
                 UserName = username,
 
             };
