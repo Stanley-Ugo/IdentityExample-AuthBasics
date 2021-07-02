@@ -80,7 +80,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Register POST Method 
+        //Register POST Metho
         [HttpPost]
         public async Task<IActionResult> Register(string username, string password)
         {
