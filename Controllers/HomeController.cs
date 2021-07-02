@@ -102,7 +102,7 @@ namespace IdentityExample.Controllers
 
                 await _emailService.SendAsync("test@test.com", "Email Verify", $"<a href=\"{link}\">Verify Email</a>", true);
 
-                return RedirectToAction("EmailVerification")
+                return RedirectToAction("EmailVerification");
             }
             return RedirectToAction("Index");
         }
