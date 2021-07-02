@@ -96,7 +96,7 @@ namespace IdentityExample.Controllers
             {
                 //generation of the email confirmation token.
 
-                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user)
 
                 var link = Url.Action(nameof(VerifyEmail), "Home", new { userId = user.Id, code }, Request.Scheme, Request.Host.ToString());
 
