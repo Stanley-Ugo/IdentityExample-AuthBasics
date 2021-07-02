@@ -98,9 +98,9 @@ namespace IdentityExample.Controllers
 
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
-                var link = Url.Action(nameof(VerifyEmail), "Home", new { userId = user.Id, code }, Request.Scheme, Request.Host.ToString())
+                var link = Url.Action(nameof(VerifyEmail), "Home", new { userId = user.Id, code }, Request.Scheme, Request.Host.ToString());
 
-                await _emailService.SendAsync("test@test.com", "Email Verify", $"<a href=\"{link}\">Verify Email</a>", true);
+                await _emailService.SendAsync("test@test.com", "Email Verify", $"<a href=\"{link}\">Verify Email</a>", true)
 
                 return RedirectToAction("EmailVerification");
             }
