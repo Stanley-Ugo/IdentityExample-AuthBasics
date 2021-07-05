@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NETCore.MailKit.Core;
 using System;
-using System.Collections.Gen
+using System.Collections.G
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
