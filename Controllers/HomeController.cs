@@ -71,7 +71,7 @@ namespace IdentityExample.Controllers
             return RedirectToAction("Index");
         }
 
-        //Register method
+        //Register A method
         public IActionResult Register()
         {
             return View();
