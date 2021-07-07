@@ -77,7 +77,7 @@ namespace IdentityExample.Controllers
             return View();
         }
 
-        //Register ac POST Method
+        //Register act POST Method
         [HttpPost]
         public async Task<IActionResult> Register(string username, string password)
         {
