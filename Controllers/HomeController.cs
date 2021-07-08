@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NETCore.MailKit.Core;
 using System;
-using System.Securit
+using System.Secur
 using System.Threading.Tasks;
 
 namespace IdentityExample.Controllers
